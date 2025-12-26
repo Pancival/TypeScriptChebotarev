@@ -28,18 +28,18 @@ describe("validateDate()", () => {
 import { validateCity } from "./validateCity";
 
 describe("validateCity()", () => {
-    test("выдаёт предупреждение при наличии экранирования (например, < или >)", () => {
+    test("выдаёт предупреждение при наличии экранирования", () => {
         const result = validateCity("<script>");
         expect(result.isValid).toBe(false);
         expect(result.error).toBeDefined();
     });
 
-    test("пропускает название с восклицательным знаком или дефисами (Saint-Louis-du-Ha! Ha!)", () => {
+    test("пропускает название с восклицательным знаком или дефисами", () => {
         const result = validateCity("Saint-Louis-du-Ha! Ha!");
         expect(result.isValid).toBe(true);
     });
 
-    test("пропускает название со спецсимволами (например, Ağrı)", () => {
+    test("пропускает название со спецсимволами", () => {
         const result = validateCity("Ağrı");
         expect(result.isValid).toBe(true);
     });
