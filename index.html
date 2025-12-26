@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cropper App</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+
+  <div class="toolbar">
+    <button id="upload-btn">Upload image</button>
+    <button id="crop-btn">Crop image</button>
+    <a id="download-btn" download="cropped.png">Download new image</a>
+  </div>
+
+  <input hidden type="file" id="file-input" accept="image/*">
+
+  <div class="workspace">
+    <img id="image" />
+  </div>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
