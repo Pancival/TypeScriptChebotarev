@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.workspace {
+  width: 900px;
+  height: 600px;
+  border: 1px solid #aaa;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eee;
+}
+
+#image {
+  max-width: none;
+  display: block;
+}
